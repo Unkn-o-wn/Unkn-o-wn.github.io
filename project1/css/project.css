@@ -12,7 +12,7 @@ body{
 header{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		font-size:16px;
 		margin-top: 22.5px;
 	}
@@ -43,11 +43,52 @@ nav a.active{
 	border-bottom: 4px solid #3070a8;
 	color:#3070a8;
 }
-
-
-
-
-
+div.banner{
+	margin-top:-37px;
+	background-image: url("../img/banner.png");
+	 background-position-y:18%; /* Положение фона */
+	background-size:100%;
+	font-size:16px;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 585px;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap:wrap;
+}
+div.banner h2{
+	
+	font-size:2.25em;
+	letter-spacing: 1px;
+	font-family: "Futura BT";		
+}
+div.banner h2 span{
+	font-size:1.33em;	
+	text-transform:uppercase;	
+}
+div.banner p{
+	font-weight:normal;
+	font-style: italic;
+	font-family: Calibri;
+	font-size:1.25em;
+	line-height: 30px;
+}
+div.banner button{
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: 600;
+	font-family: "Open Sans";
+	text-align: center;
+	margin:0 auto;
+	margin-top:41px;
+	margin-bottom:53px;
+	width: 245px;
+	height: 57px;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 	header{
@@ -55,6 +96,8 @@ nav a.active{
 		flex-direction: row;
 		justify-content: space-around;
 	}
+	
+
 }
 
 /* Portrait tablets and medium desktops */
@@ -63,6 +106,18 @@ nav a.active{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+		}
+		div.banner{
+		 background-position-y:24%; /* Положение фона */
+		}
+		div.banner h2{
+			font-size:2em;		
+		}
+		div.banner h2 span{
+			font-size:1.20em;
+		}
+		div.banner p{
+			font-size:1em;
 		}
 	
 }
@@ -77,6 +132,9 @@ nav a.active{
 	nav{
 		display: none;
 	}
+	div.banner button{
+		margin-bottom:100px;
+	}
 	
 }
 
@@ -90,6 +148,27 @@ nav a.active{
 	nav{
 		display: none;
 	}
+	div.banner h2{
+			margin-top:-22%;
+			font-size:1.5em;	
+			letter-spacing:0.5px	
+		}
+		div.banner h2 span{
+			font-size:1.10em;
+
+		}
+		div.banner p{
+			font-size:0.75em;
+			line-height: 15px;
+		}
+		div.banner button{
+		margin-top:20px;
+		font-size: 0.5em;
+		width: 120px;
+	height: 28px;
+	}
+	
+	
 }
 
 /* Landscape phones and smaller */
@@ -101,5 +180,24 @@ nav a.active{
 	}
 	nav{
 		display: none;
+	}
+	div.banner h2{
+			margin-top:-40%;
+			font-size:1em;	
+			letter-spacing:0.25px;	
+		}
+		div.banner h2 span{
+			font-size:1em;
+
+		}
+		div.banner p{
+			font-size:0.50em;
+			line-height: 10px;
+		}
+		div.banner button{
+		margin-top:20px;
+		font-size: 0.5em;
+		width: 120px;
+	height: 28px;
 	}
 }
