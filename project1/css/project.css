@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face{
+	font-family:"Futura BT";
+	src:url("../font/futura-book-bt-22240.ttf");
+	src:url("../font/futura-book-bt-22240.ttf").format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+body{
+		background-color: #fff;
+	}
+header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		font-size:16px;
+		margin-top: 22.5px;
+	}
+h1{
+	color:#ee8129;
+	font-family: "Futura BT";
+	font-size:2.25em;
+	text-align: center;
+}
+h1 span {
+	color:#3070a8;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+nav{
+	font-family: "Open Sans";
+	font-size: 0.88em;
+	font-weight: 600;
+	margin-top:10px;
+}
+nav a{
+	text-decoration: none;
+	color:#989898;
+	text-transform: uppercase;
+	padding: 0 15px 18px 15px;
+}
+nav a.active{
+	border-bottom: 4px solid #3070a8;
+	color:#3070a8;
+}
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px){
+	header{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	nav{
+		display: none;
+	}
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	nav{
+		display: none;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	nav{
+		display: none;
+	}
+}
