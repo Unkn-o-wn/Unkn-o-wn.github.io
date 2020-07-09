@@ -44,9 +44,9 @@ nav a.active{
 	color:#3070a8;
 }
 div.banner{
-	margin-top:-37px;
+	margin-top:12px;
 	background-image: url("../img/banner.png");
-	 background-position-y:18%; /* Положение фона */
+	 background-position-y:50%; /* Положение фона */
 	background-size:100%;
 	font-size:16px;
 	background-repeat: no-repeat;
@@ -89,6 +89,67 @@ div.banner button{
 	background-color: transparent;
 	border: 1px solid #ffffff;
 }
+div.services{
+	font-size: 16px;
+}
+div.services h2{
+	margin-top:34.5px;
+	font-size: 1.875em;
+	line-height: 25px;
+	color: #41525c;
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+	text-align: center;
+}
+div.services ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom:31.5px;
+}
+div.services ul li figure span{
+	display: flex;
+	justify-content: center;
+	
+}
+div.services ul li figure i{
+	width: 141px;
+	height:141px;
+	margin-top:39px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	color:#fff;
+	background-color:#3070a8;
+	border-radius:50%;
+	box-shadow:  inset 0px 0px 10px 0px rgba(0,0,0,0.33);
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.33);
+}
+div.services ul li figure figcaption h3{
+	margin-top:16.5px;
+	font-size: 1.875em;
+	letter-spacing: 1px;
+	color: #3070a8;
+	text-transform: uppercase;
+	font-family: "Futura BT";
+	text-align: center;
+}
+div.services ul li figure figcaption p{
+	width:306px;
+	margin-top:13.5px;
+	font-size: 0.875em;
+	letter-spacing: 0px;
+	line-height: 25px;
+	color: #999999;
+	font-weight: 400;
+	font-family: "Open Sans";
+	text-align: center;
+}
+
+
+
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 	header{
@@ -108,7 +169,8 @@ div.banner button{
 			justify-content: space-around;
 		}
 		div.banner{
-		 background-position-y:24%; /* Положение фона */
+		 background-position-y:40%; /* Положение фона */
+		 margin-top:-7px;
 		}
 		div.banner h2{
 			font-size:2em;		
@@ -135,7 +197,9 @@ div.banner button{
 	div.banner button{
 		margin-bottom:100px;
 	}
-	
+	div.banner p{
+	margin: 15px 40px 0 40px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -162,12 +226,23 @@ div.banner button{
 			line-height: 15px;
 		}
 		div.banner button{
-		margin-top:20px;
-		font-size: 0.5em;
-		width: 120px;
-	height: 28px;
-	}
-	
+			margin-top:20px;
+			font-size: 0.5em;
+			width: 120px;
+			height: 28px;
+		}
+		div.services h2{
+			margin-left: 10px;
+			margin-right: 10px
+		}
+		div.services ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		div.services ul li figure figcaption p{
+			margin:0 auto;
+		}
 	
 }
 
@@ -195,9 +270,22 @@ div.banner button{
 			line-height: 10px;
 		}
 		div.banner button{
-		margin-top:20px;
-		font-size: 0.5em;
-		width: 120px;
-	height: 28px;
-	}
+			margin-top:20px;
+			font-size: 0.5em;
+			width: 120px;
+			height: 28px;
+		}
+		div.services h2{
+			margin-left: 10px;
+			margin-right: 10px
+		}
+		div.services ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		div.services ul li figure figcaption p{
+			margin:0 auto;
+		}
+
 }
