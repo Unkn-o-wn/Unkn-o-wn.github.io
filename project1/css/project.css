@@ -139,8 +139,7 @@ div.services ul li figure figcaption p{
 	width:306px;
 	margin-top:13.5px;
 	font-size: 0.875em;
-	letter-spacing: 0px;
-	line-height: 25px;
+	
 	color: #999999;
 	font-weight: 400;
 	font-family: "Open Sans";
@@ -191,15 +190,38 @@ div.services ul li figure figcaption p{
 		flex-direction: row;
 		justify-content: center;
 	}
+	header h1{
+		font-size: 3.5em;
+    margin: 2% 0 0 0;
+	}
 	nav{
 		display: none;
 	}
 	div.banner button{
 		margin-bottom:100px;
+		font-size:1.5em;
 	}
 	div.banner p{
 	margin: 15px 40px 0 40px;
+	font-size: 1.8em;
 	}
+		div.services h2{
+			margin-left: 10px;
+			margin-right: 10px;
+			font-size: 2.875em;
+    line-height: 50px;
+		}
+		div.services ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		div.services ul li figure figcaption p{
+			width: auto;
+			margin:0 auto;
+			margin-left: 10%;
+			margin-right:10%;
+		}
 }
 
 /* Landscape phones and portrait tablets */
@@ -286,6 +308,7 @@ div.services ul li figure figcaption p{
 		}
 		div.services ul li figure figcaption p{
 			margin:0 auto;
+			font-size: 2em;
 		}
 
 }
