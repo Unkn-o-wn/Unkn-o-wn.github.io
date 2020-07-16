@@ -6,6 +6,7 @@
 	font-style: normal;
 	font-weight: normal;
 }
+html { overflow-x: hidden; }
 body{
 		background-color: #fff;
 	}
@@ -46,8 +47,8 @@ nav a.active{
 div.banner{
 	margin-top:12px;
 	background-image: url("../img/banner.png");
-	 background-position-y:50%; /* Положение фона */
-	background-size:100%;
+	background-position-y:50%; /* Положение фона */
+	background-size:cover;
 	font-size:16px;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -68,7 +69,7 @@ div.banner h2 span{
 	font-size:1.33em;	
 	text-transform:uppercase;	
 }
-div.banner p{
+p.text-italic{
 	font-weight:normal;
 	font-style: italic;
 	font-family: Calibri;
@@ -145,10 +146,46 @@ div.services ul li figure figcaption p{
 	font-family: "Open Sans";
 	text-align: center;
 }
-
-
-
-
+section#middle-section{
+	background-image: url("../img/Untitled-1.jpg");
+	background-position-y:50%; /* Положение фона */
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-size: 16px;
+}
+section#middle-section div{
+	width:1023px;
+	margin:0 auto;
+	
+}
+section#middle-section div div{
+	width:677px;
+	margin:0;
+}
+section#middle-section div div h2{
+	font-size: 1.63em;
+	padding-top:44.5px;
+	letter-spacing: -1px;
+	line-height: 48px;
+	color: #ee8129;
+	font-family: "Futura BT";
+	text-transform:uppercase;
+}
+section#middle-section div div p{
+	color:#fff;
+	font-size: 1.19em;
+	padding:13.5px 0;
+}
+section#middle-section div div ul{
+	color:#9d9d9d;
+	line-height: 30px;
+	font-weight: 400;
+	font-family: "Open Sans";
+	list-style-type:disc;
+	margin-left: 15px;
+	padding-bottom:44.5px;
+		font-size: 0.875em;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 	header{
@@ -222,6 +259,26 @@ div.services ul li figure figcaption p{
 			margin-left: 10%;
 			margin-right:10%;
 		}
+		section#middle-section div{
+			width:auto;
+			margin:0 auto;	
+		}
+		section#middle-section div div{
+			width:677px;
+			margin:0 0 0 40px;
+		}
+		section#middle-section div div h2{
+			font-size: calc(1.63em * 1.5);
+			letter-spacing: -1px;
+			line-height: 48px;
+		}
+		section#middle-section div div p{
+			font-size: calc(1.19em * 1.5);
+		}
+		section#middle-section div div ul{
+			font-size: calc(0.875em * 1.5);
+		}
+
 }
 
 /* Landscape phones and portrait tablets */
