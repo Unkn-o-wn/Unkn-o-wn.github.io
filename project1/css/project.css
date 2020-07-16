@@ -6,7 +6,7 @@
 	font-style: normal;
 	font-weight: normal;
 }
-html { overflow-x: hidden; }
+
 body{
 		background-color: #fff;
 	}
@@ -222,6 +222,10 @@ section#middle-section div div ul{
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
 	header{
 		display: flex;
 		flex-direction: row;
