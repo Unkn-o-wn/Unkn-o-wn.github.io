@@ -6,7 +6,9 @@
 	font-style: normal;
 	font-weight: normal;
 }
-
+p,li,h1,h2,h3,h4,h5,h6{
+	cursor: default;
+}
 body{
 		background-color: #fff;
 	}
@@ -89,6 +91,7 @@ div.banner button{
 	height: 57px;
 	background-color: transparent;
 	border: 1px solid #ffffff;
+	cursor: pointer;
 }
 div.services{
 	font-size: 16px;
@@ -185,7 +188,245 @@ section#middle-section div div ul{
 	margin-left: 15px;
 	padding-bottom:44.5px;
 		font-size: 0.875em;
+
 }
+section#middle-section div div ul li:hover{
+	color: #3070a8;
+}
+
+section#pricing{
+	margin-top: 37.5px;
+	font-size: 16px;
+	font-family:'Trebuchet MS';
+}
+section#pricing h2.title__pricing{
+	font-size:1.9em;  
+	line-height: 25px;
+	color: #41525c;
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+	text-align: center;
+	text-transform:uppercase;
+	}
+	div.main__banner__container div.main__content__p{
+	display: flex;
+	justify-content: center;
+	margin-top:32px;
+	margin-bottom:32px;
+}
+div.main__banner__container  div.banner__pricing{
+	width:300px;
+	height:470px;
+	box-sizing: border-box;
+	text-align: center;
+	
+}
+div.main__banner__container  div.banner__pricing:nth-child(odd){
+	width:300px;
+	height:450px;
+	box-sizing: border-box;
+	text-align: center;
+	
+}
+div.main__banner__container div.second__banner{
+		border:3px solid #ec8136;
+		border-radius:4px;
+		z-index:10;
+}
+div.main__banner__container div.banner__pricing{
+	border-radius:4px 4px 4px 4px;
+} 
+div.main__banner__container div.banner__pricing div{
+	padding:20px 0 20px;
+	margin:0;
+}
+
+div.main__banner__container div.banner__pricing div h2{
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	font-size:24px;
+	margin:0;
+	padding:0;
+}
+ div.first__banner div {
+	background-color: #37c2d3;
+	border-radius:4px 4px 0 0;
+	}
+div.second__banner div{
+	background-color: #ec8136;
+	padding: 17px 0 20px ;
+}
+div.third__banner div{
+	background-color: #1cb79a;
+	border-radius:4px 4px 0 0;
+}
+div.first__banner div h2{
+	margin:0;
+	padding:0;
+}
+div.first__banner, div.third__banner{
+	margin-top:10px;
+	border: 1px solid #e8eaeb;
+	border-top:none;
+	height:445px;
+	z-index:-10;
+	position: relative;
+	right: 4px;
+}
+div.first__banner{
+	left:4px;
+	right:0;
+}
+div.second__banner main{
+	background-color:#fff;
+}
+div.banner__pricing main p{
+	color:#3f4042;
+	margin:0;
+	font-size:24px;
+}
+div.banner__pricing main p:nth-child(1){
+	padding-top:20px;
+}
+div.banner__pricing main p.price{
+	font-size: 72px;
+}
+div.banner__pricing main p sup{
+	font-size:24px;
+	position: relative;
+	top:-10px;
+}
+div.banner__pricing main p sub{
+	font-size:18px;
+}
+div.banner__pricing main ul{
+	list-style-type:none;
+	padding: 0;
+	text-align:left;
+	width: 260px;
+	margin:1em auto;
+	margin-bottom: 40px;
+}
+div.banner__pricing main ul li{
+	padding:10px 0;
+	margin-bottom:1px;
+	font-size: 15px;
+
+}
+div.banner__pricing main ul li:nth-child(odd){
+	background-color:#edf5fd;
+}
+div.banner__pricing main ul li:nth-child(even){
+	background-color:#f5f5f6;
+}
+div.banner__pricing main ul li:before{
+	content: url('../img/Shape-4-copy-6.png');
+	margin-right:20px;
+	margin-left:30px;
+}
+div.banner__pricing main a{
+	text-decoration: none;
+	color: #fff;
+	background-color:#ee8129;
+	border-radius:4px;
+	padding:10px 75px;
+	box-shadow: 0px 3px 0px 0px #b3560b;
+}
+div.banner__pricing main a.odd{
+	background-color:#3371a6;
+	box-shadow: 0px 3px 0px 0px #154269;
+	margin-top: 20px;
+}
+div.main__content__p div.banner__pricing main a:hover{
+	box-shadow:none;
+}
+section#testimonials{
+	background-image: url(../img/Rectangle-35-copy.png);
+	background-position-y:50%; /* Положение фона */
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+	box-sizing: border-box;
+	font-size:16px;
+}
+section#testimonials h2{
+	margin:60px 0 50px 0;
+	padding:0;	
+	text-align: center;
+	text-transform:uppercase;
+	font-size:2.5em;
+	font-family:'Trebuchet MS';
+	color: #3170a8;
+	font-weight:bold;
+}
+section#testimonials h2 span{
+	color: #ee8129;
+	font-weight:200;
+}
+section#testimonials div {
+	font-family:'Trebuchet MS';
+}
+section#testimonials div ul{
+	display: flex;
+	justify-content:center;
+}
+section#testimonials div ul li{
+	display: flex;
+	flex-direction: row;
+	margin:0 45px 80px 0;
+	box-sizing:border-box;
+}
+div.user__photo{
+	margin-right:25px;
+}
+div.user__photo img{
+	width: 100px;
+	height: 100px;
+}
+div.review__user{
+	height: 100px;
+	background-color:#f7f7f7;
+	border: 1px solid #e0e0e0;
+	position: relative;
+}
+div.review__user:before{
+	content: '';
+	position: absolute;
+	top:calc(50% - 20px);
+	left:-40px;
+	border:20px solid transparent;
+	border-right: 20px solid #e0e0e0;
+}
+div.review__user:after{
+	content: '';
+	position: absolute;
+	top:calc(50% - 20px);
+	left:-39px;
+	border:20px solid transparent;
+	border-right: 20px solid #f7f7f7;
+}
+div.info__user{
+	margin:0 15px;
+	padding:15px 0 10px 0;
+	border-bottom:1px dashed #666666;
+	color: #3573aa;
+	display: flex;
+	justify-content: space-between;
+	font-style: italic ;
+}
+div.info__user span.user__name:before{
+	content:'-';
+}
+div.review__user p{
+	margin:0 15px;
+	padding:0 10px 0 10px;
+	line-height: 20px;
+	color:#666;
+	font-size:13px ; 
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 	header{
@@ -222,9 +463,9 @@ section#middle-section div div ul{
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
+	::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0.0);
 }
 	header{
 		display: flex;
@@ -282,11 +523,24 @@ section#middle-section div div ul{
 		section#middle-section div div ul{
 			font-size: calc(0.875em * 1.5);
 		}
-
+		section#pricing div.main__banner__container div.main__content__p{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			
+		}
+		section#pricing div.main__banner__container div.main__content__p div.banner__pricing{
+			margin:0 auto;
+			margin-bottom:15px;		
+		}
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 481px) and (max-width: 767px) {
+	::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0.0);
+}
 	header{
 		display: flex;
 		flex-direction: row;
@@ -331,6 +585,10 @@ section#middle-section div div ul{
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+	::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0.0);
+}
 	header{
 		display: flex;
 		flex-direction: row;
