@@ -426,6 +426,124 @@ div.review__user p{
 	color:#666;
 	font-size:13px ; 
 }
+footer{
+	font-size:16px;	
+	font-family:'Trebuchet MS';
+}
+footer section.before__footer{
+	display:flex;
+	flex-direction: row;
+
+}
+footer section.before__footer div.contacts_info, footer section.before__footer div.map{
+flex: 1;
+  -webkit-flex: 1;
+}
+footer section.before__footer div.contacts_info{
+	display: flex;
+	flex-direction: row;
+	line-height: 36px;
+	font-size: 0.88em;
+	color: #666;
+	font-weight: 600;
+	font-family: "Open Sans";
+}
+footer section.before__footer div.contacts_info div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left:25%;
+
+}
+footer section.before__footer div.contacts_info div ul.contact_info li{
+	position: relative;
+}
+li.adres:before{
+		position: absolute;
+		left: -30%;
+		font-size: 1.88em;
+		color: #3070a8;
+        content: '\f3c5';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 900;     
+}
+li.adres span{
+	display: block;
+}
+li.phone a:before{
+		position: absolute;
+		left: -30%;
+		font-size: 1.88em;
+        content: '\f3cd';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 900; 
+        color: #3070a8;
+    
+}
+li.mail a:before{
+		position: absolute;
+		left: -33%;
+		font-size: 1.88em;
+        content: '\f0e0';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 900;  
+       	color: #3070a8;  
+}
+ul.contact_info li a{
+	color: #666;
+	text-decoration: none;
+}
+
+ul.socila_links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size:2em; 
+	margin: 35px 0;
+	margin-left: -32%;
+
+
+}
+ul.socila_links li a{
+	text-decoration: none;
+	color: #fff;
+}
+ul.socila_links li a i{
+
+	width: 46px;
+	height:46px;
+	border-radius:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul.socila_links li a i.fa-facebook-f{
+	background-color: #4967a9;
+}
+ul.socila_links li a i.fa-twitter{
+	background-color: #1ab2e8;
+}
+ul.socila_links li a i.fa-linkedin-in{
+	background-color: #007ab9;
+}
+footer section.footer{
+	text-align:center;
+	background-color: #3070a8;
+	padding:15.5px;
+}
+footer section.footer p {
+	color:#fff;
+	font-family: "Open Sans";
+	font-size: 0.88em;
+	line-height:30px;
+}
+footer section.footer p span.bold{
+	font-weight:bold;
+}
+footer section.footer p span.black{
+	color:black;
+}
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -532,6 +650,37 @@ div.review__user p{
 		section#pricing div.main__banner__container div.main__content__p div.banner__pricing{
 			margin:0 auto;
 			margin-bottom:15px;		
+		}
+		section#testimonials div ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		section#testimonials div ul li {
+			margin: 0 auto 80px auto;
+		}
+		footer section.before__footer{
+			display: flex;
+			flex-direction: column;
+		}
+		footer section.before__footer div.contacts_info div {
+			width: 100%;
+		    margin-left: 15%;
+		}
+		footer section.before__footer div.contacts_info div ul.socila_links {
+		   display: flex;
+		   justify-content: space-between;
+		   margin: 35px 0;
+		   margin-right: 15%;
+
+		}
+		li.adres:before, li.phone a:before{
+		    position: absolute;
+		    left: -5%;
+		}
+		li.mail a:before {
+		    position: absolute;
+		    left: -5.5%;
 		}
 }
 
