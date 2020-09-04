@@ -433,7 +433,6 @@ footer{
 footer section.before__footer{
 	display:flex;
 	flex-direction: row;
-
 }
 footer section.before__footer div.contacts_info, footer section.before__footer div.map{
 flex: 1;
@@ -575,8 +574,7 @@ footer section.footer p span.black{
 		}
 		div.banner p{
 			font-size:1em;
-		}
-	
+		}	
 }
 
 /* Portrait tablets and small desktops */
